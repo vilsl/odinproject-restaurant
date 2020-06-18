@@ -4,6 +4,7 @@ This is the main file that handles page-loading from their respective modules.
 
 import { renderLanding } from "./landingpage";
 import { renderMenu } from "./menupage";
+import { renderContact } from "./contactpage";
 
 const pageSwitcher = (() => {
     const _clearPage = () => {
@@ -23,6 +24,11 @@ const pageSwitcher = (() => {
             console.log("menu");
             _clearPage();
             renderMenu();
+        }
+        else if (targetTab == "contact"){
+            console.log("contact");
+            _clearPage();
+            renderContact();
         }
     }
 
