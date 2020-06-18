@@ -20,7 +20,7 @@ function renderMenu(){
     for (let i = 0; i < menuEntries.length; i++){
         let li = document.createElement("li");
         li.textContent = menuEntries[i];
-        menu.appendChild("li");
+        menu.appendChild(li);
     }
 
     mainDiv.appendChild(menu);
